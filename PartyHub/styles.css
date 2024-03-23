@@ -1,0 +1,184 @@
+:root {
+  --blue: #007bff;
+  --ice-white: #f1f3f5;
+  --black: #343a40;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--ice-white);
+  color: var(--black);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.site-header,
+.site-footer {
+  background-color: var(--blue);
+  color: var(--ice-white);
+  padding: 20px 0;
+}
+
+.site-header h1,
+.site-footer p {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--ice-white);
+}
+
+#hero {
+  background: var(--blue);
+  color: var(--ice-white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.info-section {
+  padding: 40px 0;
+}
+
+.info-section:nth-child(even) {
+  background-color: var(--black);
+  color: var(--ice-white);
+}
+
+.info-section h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .site-header nav ul,
+  .site-footer p {
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: var(--blue);
+  color: var(--ice-white);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: darken(var(--blue), 10%);
+}
+.site-header .logo {
+  display: block;
+  margin: 0 auto; /* Centraliza o logotipo */
+  background-color: #ffffff; /* Fundo branco */
+  max-width: 200px; /* Largura máxima do logotipo */
+  height: auto; /* Altura automática para manter proporção */
+  padding: 10px; /* Espaço ao redor do logotipo */
+  border: 1px solid #ccc; /* Borda cinza claro para o quadro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para efeito de elevação */
+}
+/* Estiliza a barra de navegação */
+.site-header nav {
+  text-align: center;
+  background: var(--blue);
+  padding: 10px 0;
+}
+
+/* Estiliza a lista e os itens da navegação */
+.site-header nav ul {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header nav ul li {
+  margin: 0 15px;
+}
+
+.site-header nav ul li a {
+  text-decoration: none;
+  color: var(--ice-white);
+  padding: 10px 15px;
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Adiciona efeito de hover aos links */
+.site-header nav ul li a:hover,
+.site-header nav ul li a:focus {
+  background-color: var(--ice-white);
+  color: var(--blue);
+}
+
+.team-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os membros da equipe */
+}
+
+.team-member {
+}
+
+.team-member img {
+  width: 150px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+  border-radius: 80%; /* Faz a imagem ficar redonda */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem perder a proporção */
+  margin-bottom: 15px;
+}
+
+.team-member h3,
+.team-member p {
+  margin: 5px 0;
+}
